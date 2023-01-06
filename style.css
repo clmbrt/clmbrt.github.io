@@ -13,9 +13,10 @@ background: rgb(245,244,241);
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
-    border-bottom: 3px solid black; 
-    margin: -10px -10px 2em -10px;
-
+    border-bottom: 3px solid black;
+    margin-top: -8px;
+    margin-left: -9px;
+    margin-right: -9px;
 
 }
 
@@ -33,25 +34,106 @@ background: rgb(245,244,241);
 
 /* Right-aligned section inside the top navigation */
 .topnav-right {
-  float: right;
-  justify-content: space-between;
-  display: flex;
-  width: 25%;
-
+    float: right;
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
 }
 
-.topnav-right a {
-    padding: 14px 40px;
-    border-right: 3px solid black;
-
-}
-
-.border {
+.works {
     border-left: 3px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:#B1AFFF
+
+}
+
+.about {
+    border-left: 3px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:#B1AFFF
+
+}
+
+.contact {
+    border-left: 3px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:#B1AFFF
+}
+
+.about:hover {
+    border-left: 3px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    transition: all 0.7s ease 0.1s;
+}
+
+.about:not(:hover) {
+    transition: all 0.7s ease 0.1s;
+}
+
+.works:hover {
+    border-left: 3px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    transition: all 0.7s ease 0.1s;
+}
+
+.works:not(:hover) {
+    transition: all 0.7s ease 0.1s;
+}
+
+.contact:hover {
+    border-left: 3px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    transition: all 0.7s ease 0.1s;
+}
+
+.contact:not(:hover) {
+    transition: all 0.7s ease 0.1s;
+}
+
+
+li {
+    padding: 16px 16px;
+    display: flex;
 }
 
 .logo a {
-    padding: 14px 70px;
-    padding-left: 10px;
-    padding-right: 45%;
+margin-top: 0.6%;
+margin-left: 1%;
+position: relative;
+font-size:xx-large;
 }
+
+.logo a {
+    text-decoration: none;
+    position: relative;
+  }
+
+.logo a::before {
+    content: '';
+    background-color: #B1AFFF;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+ }
+  
+ .logo a:hover::before {
+    bottom: 0;
+    height: 100%;
+  }
+
