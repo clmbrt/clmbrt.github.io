@@ -4,29 +4,135 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial_scale=1.0">
+  <meta charset="UTF-8">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anybody:wght@500&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@500;800&display=swap" rel="stylesheet">  
-  <title>CLMBRT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">  
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">  <title>CLMBRT</title>
 </head>
 
 <!--Background-->
 <body class="index-background">
 
-<!--Header and menu bar-->
-    <header class="topnav">
-      <div class="logo">
-        <a href="#home">CLMBRT</a>
-      </div>
-      <div class="topnav-right">
-          <li class="works"><a href="#">Works</a></li>
-          <li class="about"><a href="#">About</a></li>
-          <li class="contact"><a href="#">Contact</a></li>
-    </header>
+  
+<!--Menubar-->
+  <div id="navbar">
+    <div class="navstyles">
+      <div id="logo">
+    <a href="#website.html">clmbrt</a>
+   </div>
+  </div>
 
+     <div id="anchoredCtaWeb">
+      <a> works/agariopedia</a>
+     </div>
+
+    <div class="navstyles">
+  <div id="rightnavbar">
+    <a href="#https://www.youtube.com/channel/UCXo5ZiSDx2vMjSVtIurT14g">youtube</a>
+    <a href="#https://www.linkedin.com/in/clementbret/">linkedin</a>
+  </div>
+</div>
+</div>
+
+
+
+ 
 <!--Content--> 
-    <p> Hi i am Clement, im 26, from France and this is my website </p>
+ <section>
+<div class="content">
+
+<div class='intro'> <p> hi there, i am <span class="underline">clément bret.</span><br> i am an analyst and designer from france <img src="frenchflag.png" alt="french emoji" width="60" height="45">
+    and this is my website. </p>
+</div> 
+
+<div class="description"> 
+  <p>I am a creative person with a strong appetite for learning new concepts and solving complex systems. I have a deep love for strategy, data and innovation, coupled with 6+ years of education and professional experiences in multicultural settings.</p>
+</div>
+
+    <div class="column">
+
+      <table class="linktable">
+        <tr >
+          <tr><td> <div class=nonlinks>Some of my work:</div></td></tr>
+          <tr><td> <a href="#agariopedia" class="links">The Agariopedia. Creating a multiplayer online game encyclopedia and its Discord Bot</a></td></tr>
+         <tr><td> <a href="#metro" class="links">Imagining and Mapping Calgary's public transit in 2040.</a></td></tr>
+         <tr><td> <a href="#malaysia" class="links">An Outlook on Malaysia and the Belt Road Initiative (BRI).</a></td></tr>
+         <tr><td> <a href="#https://medium.com/cl%C3%A9mentbret-me/outlook-on-malaysia-and-the-belt-road-initiative-bri-dac7d50cfcb3" class="links">My youtube channel, I make cinematic and drone videos:)</a></td></tr>
+         <tr><td> <div class=nonlinks>Additional Info:</div></td></tr>
+         <tr><td> <a href="#link2" class="links">My résumé.</a></td></tr>
+         <tr><td> <a href="#link3" class="links">Contact me.</a></td></tr>
+        </tr>
+      </table>
+    </div>
+  
+  </div>
+  </section>
+
+  
+  <section>
+    <div id="agariopedia"> 
+      <div class="content"> 
+      <div class="article"> 
+        <h2>the agariopedia. creating a multiplayer online game encyclopedia and its discord bot</h2>
+    <p>I am a creative person with a strong appetite for learning new concepts and solving complex systems. I have a deep love for strategy, data and innovation, coupled with 6+ years of education and professional experiences in multicultural settings.</p>
+     </div>
+    </div>
+    </div>
+</section>
+
+<section>
+  <div id="metro"> 
+    <div class="content"> 
+    <div class="article"> 
+  <p>I am a creative person with a strong appetite for learning new concepts and solving complex systems. I have a deep love for strategy, data and innovation, coupled with 6+ years of education and professional experiences in multicultural settings.</p>
+   </div>
+  </div>
+  </div>
+</section>
+
+<section>
+  <div id="malaysia"> 
+    <div class="content"> 
+    <div class="article"> 
+  <p>I am a creative person with a strong appetite for learning new concepts and solving complex systems. I have a deep love for strategy, data and innovation, coupled with 6+ years of education and professional experiences in multicultural settings.</p>
+   </div>
+  </div>
+  </div>
+</section>
+
+
+<script>// When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
+  
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+  
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+  
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }</script>
+
+
+<script>document.addEventListener("scroll", function() {
+  const anchoredCtaWeb = document.getElementById("anchoredCtaWeb");
+  if (window.pageYOffset > 950) {
+    anchoredCtaWeb.classList.add("show");
+  }
+  if (window.pageYOffset < 950) {
+    anchoredCtaWeb.classList.remove("show");
+  }
+  
+});</script>
 
 </body>
 
