@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial_scale=1.0">
   <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anybody:wght@500&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +26,16 @@
    </div>
   </div>
 
-     <div id="anchoredCtaWeb">
+     <div id="pagetitle">
       <a> works/agariopedia</a>
+     </div>
+
+     <div id="pagetitle2">
+      <a>works/calgary-transit</a>
+     </div>
+
+     <div id="pagetitle3">
+      <a> works/maylasia-outlook</a>
      </div>
 
     <div class="navstyles">
@@ -100,40 +109,73 @@
   <p>I am a creative person with a strong appetite for learning new concepts and solving complex systems. I have a deep love for strategy, data and innovation, coupled with 6+ years of education and professional experiences in multicultural settings.</p>
    </div>
   </div>
-  </div>
+  </div>  
 </section>
 
 
-<script>// When the user scrolls the page, execute myFunction
-  window.onscroll = function() {myFunction()};
-  
-  // Get the navbar
-  var navbar = document.getElementById("navbar");
-  
-  // Get the offset position of the navbar
-  var sticky = navbar.offsetTop;
-  
-  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }</script>
-
-
-<script>document.addEventListener("scroll", function() {
-  const anchoredCtaWeb = document.getElementById("anchoredCtaWeb");
-  if (window.pageYOffset > 950) {
-    anchoredCtaWeb.classList.add("show");
-  }
-  if (window.pageYOffset < 950) {
-    anchoredCtaWeb.classList.remove("show");
-  }
-  
-});</script>
 
 </body>
+
+<footer>
+  <div id="contact"> 
+    <div class="footerbg"> 
+      <div class="footertext"> 
+  <p>I am a creative person with a strong appetite for learning new concepts and solving complex systems. I have a deep love for strategy, data and innovation, coupled with 6+ years of education and professional experiences in multicultural settings.</p>
+  </div>
+</div>
+</div>
+
+</footer>
+
+
+
+
+<script>$(document).ready( function() {
+    $("#pagetitle").hide(); //hide your div initially
+    var topOfOthDiv = $("#agariopedia").offset().top;
+    var bottomOfOthDiv = $("#metro").offset().top;
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > topOfOthDiv && $(window).scrollTop() < bottomOfOthDiv) {
+            $("#pagetitle").fadeIn(); //reached the desired point -- show div
+          }
+          else{
+            $("#pagetitle").fadeOut(); 
+        }
+    });
+});
+</script>
+
+<script>$(document).ready( function() {
+  $("#pagetitle2").hide(); //hide your div initially
+  var topOfOthDiv2 = $("#metro").offset().top;
+  var bottomOfOthDiv2 = $("#malaysia").offset().top;
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > topOfOthDiv2 && $(window).scrollTop() < bottomOfOthDiv2) {
+          $("#pagetitle2").fadeIn(); //reached the desired point -- show div
+        }
+        else{
+          $("#pagetitle2").fadeOut(); 
+      }
+  });
+});
+</script>
+
+<script>$(document).ready( function() {
+  $("#pagetitle3").hide(); //hide your div initially
+  var topOfOthDiv3 = $("#malaysia").offset().top;
+  var bottomOfOthDiv3 = $("#contact").offset().top;
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > topOfOthDiv3) {
+          $("#pagetitle3").fadeIn(); //reached the desired point -- show div
+        }
+        else{
+          $("#pagetitle3").fadeOut(); 
+      }
+  });
+});
+</script>
+
+
+
 
 </html>
