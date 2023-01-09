@@ -39,6 +39,7 @@ html {
 .intro {
     position:relative; top: 10px; 
     font-size:38pt;
+    line-height: 38pt;
     font-weight: 800;
     margin-right:15%;
 
@@ -54,6 +55,8 @@ html {
 .description {
     font-family: 'PT Sans', sans-serif;
     font-size:20pt;
+    line-height: pt;
+
     color:rgb(52, 52, 52);
     position:relative; bottom: 30px;
 }
@@ -113,11 +116,14 @@ html {
 
 
 #navbar {
-    z-index: 3;
     background-color: transparent;
     border-bottom: solid; 2px;
     overflow: hidden;
+    position: fixed;
+    z-index: 11;
+    width: 100%;
   }
+
 
 
 #avbar a:hover {
@@ -152,39 +158,39 @@ html {
     text-decoration: none;
 }
 
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
 
-  
-  #anchoredCtaWeb {
+#pagetitle {
     float: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    opacity: 0;
     transform: translate(-50%, -50%);
-    visibility: hidden;
     font-weight: 100;
     font-family: 'Source Code Pro', serif;
     letter-spacing: 5pt;
+}
 
-  }
-  
-  #anchoredCtaWeb.show {
-    opacity: 1;
-    visibility: visible;
-    transition: 0.5s ease-in-out;
-  }
+#pagetitle2 {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+    font-family: 'Source Code Pro', serif;
+    letter-spacing: 5pt;
+}
+
+#pagetitle3 {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+    font-family: 'Source Code Pro', serif;
+    letter-spacing: 5pt;
+}
 
 
 /* ARTICLES */
@@ -195,8 +201,6 @@ section {
   position:sticky;
   position:-webkit-sticky;
   top: 0;
-  padding:30px;
-
 }
 
   section:nth-child(2) {
@@ -221,7 +225,28 @@ section {
     font-family: 'PT Sans', sans-serif;
     font-size:20pt;
     color:rgb(0, 0, 0);
-    position:relative; top: 30px; 
+    margin-top: 10%;
+    color: #black;
+}
 
-    
+.footerbg {
+    float: left;
+    font-family: 'PT Sans', sans-serif;
+    font-size:20pt;
+    position:relative;   
+    color: white;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.footertext {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
 }
