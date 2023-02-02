@@ -83,10 +83,10 @@ a.active {
 
 #navigation {
   position: fixed;
-  width: 37%;
+  width: 84%;
   z-index: 1;
-  margin-right: 12%;
-  margin-left: 53%;
+  margin-right: 8%;
+  margin-left: 8%;
   top: 0;
   height: 100px;
   border-bottom: solid rgb(0, 0, 0);
@@ -127,16 +127,6 @@ a.active {
 /* CONTENT RIGHT */
 
 
-.right {
-  top: -10px;
-  bottom: 0px;
-  width: 47%;
-  margin-right: 3%;
-  margin-left: 50%;
-  background-color: transparent;
-  overflow: scroll;
-
-}
 
 .scrollsnap-section {
   scroll-snap-align: start;
@@ -145,19 +135,21 @@ a.active {
 /* BOX1 INTRO */
 
 
-.box1 {
-  position: relative;
-  height: 98vh;
-  width: 100%;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  background-color: white;
-  border-radius: 2%;
-  font-size: 14px;
+.box1image {
+  height: 98%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: auto;
+  background-size: cover;
+  border-radius: 30px 30px 0px 0px;
 }
 
+
+
 .titlebox1 {
-  padding-top: 15%;
+  padding-top: 10%;
   line-height: 60px;
   font-size: 60px;
   font-weight: 700;
@@ -186,8 +178,6 @@ a.active {
 
 .scroll {
   position: fixed;
-  float: right;
-  right: 10%;
   bottom: 80px;
   font-size: 16px;
   color: rgb(157, 157, 157);
@@ -202,7 +192,7 @@ a.active {
 .listtool {
   margin-left: 6%;
   margin-right: 12%;
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 .tool {
@@ -225,29 +215,38 @@ a.active {
 
 /* BOX2 CALGARY MAP */
 
-.box2 {
+.box {
   position: relative;
-  height: 98vh;
+  height: 100vh;
   width: 100%;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  background: linear-gradient(220deg, #85bffd 20%, #85bffd9c 100%), url("calgarymapcover.jpg");
-  background-size: cover;
-  border-radius: 2%;
   font-size: 14px;
   overflow: hidden;
-
 }
 
+.box2image {
+  height: 98%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: auto;
+  background: linear-gradient(220deg, #85adfdd6 60%, #85adfd1e 100%), url("calgarymapcover.jpg");
+  background-size: cover;
+  border-radius: 30px 30px 0px 0px;
+}
+
+
 .titlebox2 {
-  padding-top: 12%;
+  padding-top: 6%;
   line-height: 60px;
   font-size: 60px;
   font-weight: 700;
   margin-left: 6%;
   margin-right: 12%;
   opacity: 1;
-  color: rgb(0, 0, 0)
+  color: rgb(0, 0, 0);
+  z-index: 1;
+
 }
 
 .textbox2 {
@@ -265,22 +264,22 @@ a.active {
 
 /* BOX3 AGARIOPEDIA  */
 
-.box3 {
-  position: relative;
-  height: 98vh;
-  width: 100%;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  background: linear-gradient(210deg, #6599998a 5%, #ececec 100%), url("agariopediacover.jpg");
-  background-size: cover;
-  border-radius: 2%;
-  font-size: 14px;
-  overflow: hidden;
 
+.box3image {
+  height: 98%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: auto;
+  background: linear-gradient(210deg, #6599998a 5%, #ececec 100%), url("agariopediacover.jpg");
+    background-size: cover;
+  border-radius: 30px 30px 0px 0px;
 }
 
+
 .titlebox3 {
-  padding-top: 12%;
+  padding-top: 6%;
   line-height: 60px;
   font-size: 60px;
   font-weight: 700;
@@ -299,71 +298,89 @@ a.active {
 
 /* BOX4 MALAYSIA  */
 
-.box4 {
-  position: relative;
-  height: 98vh;
-  width: 100%;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  background: linear-gradient(210deg, #84d1d1 20%, #84d1d18b 100%), url("malaysia.jpg");
-  background-size: cover;
-  border-radius: 2%;
-  font-size: 14px;
-  overflow: hidden;
 
+.box4image {
+  height: 98%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: auto;
+  background: linear-gradient(210deg, #e2d291 20%, #e2d2915c 100%), url("malaysia.jpg");
+    background-size: cover;
+  border-radius: 30px 30px 0px 0px;
 }
 
 /* BOX5 SITE  */
 
-.box5 {
-  position: relative;
-  overflow: hidden;
-  height: 98vh;
-  width: 100%;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  background: linear-gradient(210deg, #fd6b6b 20%, #fd6b6ba3 100%), url("code.png");
-  background-size: cover;
-  border-radius: 2%;
-  font-size: 14px;
+.box5image {
+  height: 98%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: auto;
+  background: linear-gradient(210deg, #fd6b6b 20%, #fd6b6b7d 100%), url("code.png");
+    background-size: cover;
+  border-radius: 30px 30px 0px 0px;
 }
 
 
 /* BOX6 ABOUT ME  */
 
-.box6 {
-  position: relative;
-  overflow: hidden;
-  height: 98vh;
-  width: 100%;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  background: transparent;
 
-  border-radius: 2%;
-  font-size: 14px;
+
+.box6image {
+  height: 98%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: auto;
+  background: linear-gradient(210deg, #bfbfbf 20%, #bfbfbf82 100%), url("moi.jpg");
+    background-size: cover;
+  border-radius: 30px 30px 0px 0px;
 }
 
 
 /* BOX7 YOUUBE  */
 
-.box7 {
-  position: relative;
-  overflow: hidden;
-  height: 98vh;
-  width: 100%;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  border-radius: 2%;
-  font-size: 14px;
+.box7image {
+  height: 98%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: auto;
+    background-size: cover;
+  border-radius: 30px 30px 0px 0px;
 }
 
+
 .youtube {
+  position:absolute;
   object-fit: cover;
-  z-index: -1;
+z-index: 0;
   height: 100%;
-  transform: translateX(-20%);
-  position: absolute;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-radius: 30px 30px 0px 0px;
+
+}
+
+.titleboxyt {
+  padding-top: 6%;
+  line-height: 60px;
+  font-size: 60px;
+  font-weight: 700;
+  margin-left: 6%;
+  margin-right: 12%;
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  position: relative;
 
 }
 
@@ -373,23 +390,37 @@ a.active {
   font-size: 24px;
   font-weight: 400;
   margin-right: 12%;
+  z-index: 1;
+  position: relative;
+
+
 
 }
 
 /* FOOTER */
 
-.footerbox {
+.boxfooter {
   position: relative;
-  overflow: hidden;
-  height: 98vh;
+  height: 100vh;
   width: 100%;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  background: rgb(20, 20, 20);
-  color: white;
-  border-radius: 2%;
   font-size: 14px;
-  z-index: 3;
+  overflow: hidden;
+  z-index: 2;
+
+}
+
+.footerbox {
+  height: 99%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: auto;
+  background: rgb(0, 0, 0);
+    background-size: cover;
+  border-radius: 30px 30px 0px 0px;
+  z-index: 2;
+
 }
 
 .footertitles {
@@ -399,6 +430,20 @@ a.active {
   margin-left: 6%;
   margin-right: 12%;
   color: white;
+}
+
+.youtubetext2 {
+  line-height: 68px;
+  font-size: 45px;
+  font-weight: 700;
+  margin-left: 6%;
+  margin-right: 12%;
+  color: white;
+  z-index: 1;
+  position: relative;
+
+
+
 }
 
 .footertitles2 {
@@ -422,7 +467,7 @@ a.active {
 }
 
 .footertext2 {
-  margin-top: 7%;
+  margin-top: 4%;
   margin-left: 6%;
   font-size: 24px;
   font-weight: 400;
@@ -474,42 +519,39 @@ a.active {
 /* CONTENT LEFT */
 
 .left {
-  margin-left: 3%;
-  width: 47%;
-  height: 100vh;
-  background-color: transparent;
+  right:  10%;
+float: right;  
+background-color: transparent;
   bottom: 0;
   position: fixed;
   top: 0;
+  z-index: 1;
 
-}
-
-.title {
-  margin-top: 25%;
-  line-height: 50px;
 }
 
 .firstline {
+  display: inline-block;
 
-  font-size: 70px;
+  font-size: 90px;
   font-weight: 600;
 }
 
 .secondline {
-  font-size: 70px;
+  display: inline-block;
+  font-size: 90px;
   font-weight: 800;
-  padding-top: 10px;
 }
 
 .links {
+  text-align: right;
   position: fixed;
-  display: inline-;
   font-size: 16px;
   bottom: 40px;
   line-height: 38px;
   text-decoration: underline;
   text-underline-offset: 8px;
 }
+
 
 .links a {
   color: black;
@@ -519,13 +561,145 @@ a {
   text-decoration: none;
 }
 
+@media  screen and (max-width: 600px) {
+  .left {
+    opacity: 0% ;
+  }
+  .firstline {
+    font-size: 50px;
+    line-height: 50px;
 
-.homeimage {
-  top: 1vh;
-  height: 80%;
-  width: 46%;
-  position: fixed;
-  z-index: -1;
-  object-fit: cover;
-  border-radius: 2%;
+  }
+  .secondline {
+    font-size: 50px;
+    line-height: 50px;
+
+  }
+  .titlebox1 {
+    font-size: 30px;
+    line-height: 30px;
+
+  }
+  .titlebox2 {
+    font-size: 45px;
+    line-height: 45px;
+    padding-top: 11%;
+  }
+  #navigation {
+    height: 80px;
+  }
+  .listtool {
+    margin-top: 3%;
+
+  }
+  .textbox3 {
+    font-size: 20px;
+    }
+
+
+.titleboxyt {
+  font-size: 45px;
+  line-height: 45px;
+  padding-top: 11%;
 }
+
+.youtubetext {
+  font-size: 20px;
+  }
+  
+.youtubetext2 {
+  line-height: 50px;
+  font-size: 28px;  }
+
+}
+
+@media  screen and (min-width:1000px) and (max-width:1500px) {
+  .firstline {
+    font-size: 80px;
+    line-height: 80px;
+
+  }
+  .secondline {
+    font-size: 80px;
+    line-height: 80px;
+
+  }
+  .titlebox1 {
+    font-size: 55px;
+    line-height: 55px;
+
+  }
+}
+
+@media  screen and (min-width:600px) and (max-width:1000px) {
+  .left {
+    opacity: 0% ;
+  }
+  .firstline {
+    font-size: 60px;
+    line-height: 60px;
+
+  }
+  .secondline {
+    font-size: 60px;
+    line-height: 60px;
+
+  }
+  .titlebox1 {
+    font-size: 40px;
+    line-height: 40px;
+
+  }
+
+  .titlebox2 {
+    font-size: 50px;
+    line-height: 50px;
+    padding-top: 9%;
+  }
+  #navigation {
+  height: 90px;
+}
+.listtool {
+  margin-top: 2%;
+
+}
+.textbox3 {
+font-size: 22px;
+}
+
+.titleboxyt {
+  font-size: 50px;
+  line-height: 50px;
+  padding-top: 9%;
+}
+
+.youtubetext {
+  font-size: 22px;
+  }
+
+
+.youtubetext2 {
+  line-height: 60px;
+  font-size: 35px;  }
+}
+
+
+
+
+@media  screen and (min-height:0px) and (max-height:600px) {
+  .textbox3 {
+    font-size: 18px;
+    margin-top: 1%;
+
+  }
+  }
+
+
+@media  screen and (min-height:0px) and (max-height:800px) {
+  .footertext2 {
+opacity: 0%;
+  }
+  .footertitles2 {
+    opacity: 0%;
+      }
+  }
